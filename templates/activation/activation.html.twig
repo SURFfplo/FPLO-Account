@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Account Aanmaken{% endblock %}
+
+{% block body %}
+
+
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+        <div class="card m-b-20 card-body text-xs-center">
+        	<div class="progress progress-sm">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+            </div>
+                                    
+                                    
+                                    
+        
+            <h2 class="card-title">Welkom!</h2>
+            <p class="card-text">Je account is succesvol aangemaakt. Klik op onderstaande button om naar het startportaal van SURF pilot modulaire leeromgeving te gaan.</p>           
+
+            <a href="{{ portal_url }}" class="btn btn-inverse">Naar de SURF pilot modulaire leeromgeving!</a>
+        </div>
+    </div>
+
+    <div class="col-md-3"> </div>
+    <iframe src="{{ logout_url }}" width="1px" height="1px" frameborder="0"></iframe>
+
+
+
+{% endblock %}
+                    

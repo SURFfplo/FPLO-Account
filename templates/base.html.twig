@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta charset="utf-8" />
+        <title>SURF pilot modulaire leeromgeving</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+		<link href="{{ asset('assets/images/favicon.ico') }}" rel="shortcut icon" type="text/css"/>
+		
+        <!--Morris Chart CSS -->
+		<link href="{{ asset('assets/plugins/morris/morris.css') }}" rel="stylesheet" type="text/css"/>
+
+        <!-- App css -->
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+	    <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet" type="text/css"/>
+	    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
+	        
+	    <script src="{{ asset('assets/js/modernizr.min.js' ) }}"></script>
+
     </head>
+
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                            <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                            <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="{{ path('home') }}" class="logo">
+                            <img src="{{ asset('assets/images/surflogo.png') }}" alt="" height="40" class="logo-small">
+                            <img src="{{ asset('assets/images/surflogo.png') }}" alt="" height="42" class="logo-large">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras topbar-custom">
+
+                        <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                            <li class="menu-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="{{ path('home') }}"><i class="mdi mdi-view-dashboard"></i> <span> Home </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="{{ path('faq') }}"><i class="fa fa-question-circle-o"></i> <span> F.A.Q. </span> </a>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <br>
+                <br>
+                
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+					
+					{% block body %}Title Placeholder{% endblock %}
+
+                </div>
+                <!-- end row -->
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        2019 © SURF pilot modulaire leeromgeving
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- jQuery  -->
+        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/js/waves.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.slimscroll.js') }}"></script>
+        
+        <!-- KNOB JS -->
+        <script src="{{ asset('assets/plugins/jquery-knob/jquery.knob.js') }}"></script>
+        
+        <!--Morris Chart-->
+        <script src="{{ asset('assets/plugins/morris/morris.min.js') }}"></script>
+        <script src="{{ asset('assets/plugins/raphael/raphael-min.js') }}"></script>
+
+        <!-- Dashboard init -->
+        <script src="{{ asset('assets/pages/jquery.dashboard.js') }}"></script>
+
+        <!-- App js -->
+        <script src="{{ asset('assets/js/jquery.core.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.app.js') }}"></script>
+
+
     </body>
 </html>

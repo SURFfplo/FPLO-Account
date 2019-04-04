@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+<div class="col-md-3"></div>
+
+    <div class="col-md-6">
+        <div class="card m-b-20 card-body text-xs-center">
+        	<div class="progress progress-sm">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+            </div>
+                                    
+                                    
+                                    
+        
+            <h2 class="card-title">SURF pilot modulaire leeromgeving</h2>
+            <p class="card-text">In twee stappen wordt er een account aangemaakt om de SURF pilot modulaire leeromgeving te kunnen gebruiken. Meld je hier aan om toegang te krijgen tot de SURF pilot modulaire leeromgeving.</p>
+
+            <a href="{{ path('registration') }}" class="btn btn-secondary">Aanmelden</a>
+        </div>
+    </div>
+
+    <div class="col-md-3"> </div>
+
+{% endblock %}
