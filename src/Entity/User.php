@@ -14,7 +14,7 @@ class User implements SamlUserInterface
 {
 	public function setSamlAttributes(array $attributes)
     {
-	    $this->uid = $attributes[getenv('UID')];
+	    $this->uid = $attributes[getenv('UID')][0];
         $this->givenName = $attributes[getenv('GIVENNAME')][0];
         $this->sn = $attributes[getenv('SN')][0];
         $this->mail = $attributes[getenv('EMAIL')][0];
