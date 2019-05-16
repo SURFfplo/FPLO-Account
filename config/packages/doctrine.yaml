@@ -14,13 +14,11 @@ doctrine:
         default_table_options:
             charset: utf8mb4
             collate: utf8mb4_unicode_ci
-		
-		dbname:               '%env(resolve:DB_NAME)%'
-        host:                 '%env(resolve:DB_HOST)%'
-        port:                 '%env(resolve:DB_PORT)%'
-        user:                 '%env(resolve:DB_USER)%'
-        password:             '%env(resolve:DB_PASS_FILE)%'
-        driver:               pdo_mysql
+        dbname: '%env(resolve:DB_NAME)%'
+        host: '%env(resolve:DB_HOST)%'
+        port: '%env(resolve:DB_PORT)%'
+        user: '%env(resolve:DB_USER)%'
+        password: '%env(resolve:DB_PASS_FILE)%'
         # if the url option is specified, it will override the above config
         #url: '%env(resolve:DATABASE_URL)%'
     orm:
