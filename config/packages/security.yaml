@@ -11,7 +11,7 @@ security:
             pattern:    ^/
             anonymous: true
             saml:
-                username_attribute: eppn
+                username_attribute: nameId
                 use_attribute_friendly_name: false
                 check_path: /saml/acs
                 login_path: /saml/login
