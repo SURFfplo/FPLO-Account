@@ -31,7 +31,7 @@ class ActivationController extends AbstractController
 			    //if eppn not exist add eppn to DB.
 			    $client = new Client([
 	
-			 		'base_uri' => getenv('NODERED_ENDPOINT'),
+			 		'base_uri' => getenv('NODERED_URL'),
 			 		'timeout'  => 2.0,
 			 	]);
 			 	
