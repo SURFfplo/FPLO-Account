@@ -31,20 +31,22 @@ class ActivationController extends AbstractController
 			    //if eppn not exist add eppn to DB.
 			    $client = new Client([
 	
-			 		'base_uri' => 'http://hassio.local:1880',
+			 		'base_uri' => getenv('NODERED_ENDPOINT'),
 			 		'timeout'  => 2.0,
 			 	]);
 			 	
 		
-			 	$response = $client->request('POST', 'account', ['json' => [
+			 	$response = $client->request('POST', '/person', ['json' => [
 			   		
-			   		'cn' => 'cn',
-			   		'firstName' => $user->givenName,
-			   		'lastName' => $user->sn,
-			   		'uid' => $user->uid,
-			   		'mail' => $user->mail, 		
+			   		"firstName" => $user->givenName,
+			   		"lastName" => $user->sn,
+			   		"email" => $user->mail, 
+			   		"role" => 'student',
+			   		"schacHomeOrganization" => $user->schacHomeOrganization,
+			   		"EduPersonPrincipalName" => $user->eppn,
 			   	]]);
 			   	
+	
 			   	$entityManager = $this->getDoctrine()->getManager();
 		
 		        $eppn = new Eppn();

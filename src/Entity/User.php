@@ -19,6 +19,7 @@ class User implements SamlUserInterface
         $this->sn = $attributes[getenv('SN')][0];
         $this->mail = $attributes[getenv('EMAIL')][0];
         $this->eppn = $attributes[getenv('EPPN')][0];
+        $this->schacHomeOrganization = $attributes[getenv('SCHACHOME')][0];
     }
     
     /**
