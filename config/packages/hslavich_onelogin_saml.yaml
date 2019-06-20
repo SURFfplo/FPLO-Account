@@ -1,5 +1,6 @@
 hslavich_onelogin_saml:
     # Basic settings
+    
     idp:
         entityId: '%env(resolve:ENTITY_ID)%'
         singleSignOnService:
@@ -17,5 +18,4 @@ hslavich_onelogin_saml:
         singleLogoutService:
             url: '%env(resolve:SINGLE_LOGOUT_SERVICE_SP)%'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
-        #x509cert: '%env(resolve:SP_CERT)%'
-        #privateKey: '%env(resolve:PRIVATE_KEY)%'
+    strict: false
