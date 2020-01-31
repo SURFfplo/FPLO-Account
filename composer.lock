@@ -160,7 +160,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/collections/zipball/c5e0bc17b1620e97c968ac409acbff28b8b850be",
-                "reference": "c5e0bc17b1620e97c968ac409acbff28b8b850be",
+                "reference"redirect-to-original-page: "c5e0bc17b1620e97c968ac409acbff28b8b850be",
                 "shasum": ""
             },
             "require": {
@@ -1586,14 +1586,9 @@
             "version": "v1.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hslavich/OneloginSamlBundle.git",
-                "reference": "7a8e7e7f0bbf30bc0fcb662d52a4549b0eba3828"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hslavich/OneloginSamlBundle/zipball/7a8e7e7f0bbf30bc0fcb662d52a4549b0eba3828",
-                "reference": "7a8e7e7f0bbf30bc0fcb662d52a4549b0eba3828",
-                "shasum": ""
+                "url": "https://github.com/kubajaburek/OneloginSamlBundle.git",
+                "reference": "7b8516cddddb2caae927769a09dccc67e1c554c1"
+                "branch": "dev-redirect-to-original-page"
             },
             "require": {
                 "onelogin/php-saml": "^3.0",
