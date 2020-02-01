@@ -18,3 +18,4 @@ hslavich_onelogin_saml:
         singleLogoutService:
             url: '%env(resolve:SINGLE_LOGOUT_SERVICE_SP)%'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+    baseurl: '%env(resolve:SAML_BASEURL)%'
